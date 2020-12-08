@@ -1,0 +1,32 @@
+.grid-about {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    padding: 10px;
+  }
+
+#about {
+    width: 60%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.about-inner-text {
+    font-size: 1em; 
+    font-weight: normal; 
+    color: rgb(65, 61, 61);
+    margin-bottom: 30px;
+}
+.img-shadow {
+    box-shadow: 10px 10px 5px #ccc;
+}
+@media screen and (max-width: 450px) {
+    #about {
+        width: 90%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .grid-about {
+        grid-template-columns: auto;
+    }
+  }
