@@ -66,7 +66,7 @@ body {
     color: white;
     border-radius: 1em;
     padding: 1em;
-    margin: 2em;
+    /*margin: 2em;*/
     display: flex;
     align-items: flex-end;
     background-size: cover;
@@ -159,7 +159,7 @@ body {
     transform: scale(1);
   }
   
-  .card-grid-space {
+  .card-grid-space .name {
     font-size: 3em;
     margin-bottom: 1.2rem;
     margin-left: 1rem;
@@ -196,10 +196,9 @@ body {
     }
     .info {
       justify-content: center;
-      text-align: center;
     }
-    .card-grid-space {
-      /* margin-left: 0; */
+    .card-grid-space .num {
+      margin-left: 0;
       text-align: center;
     }
   }
@@ -237,7 +236,10 @@ body {
   
   @media screen and (max-width: 450px) {
     .info {
-      justify-content: center;
+      display: block;
       text-align: center;
+    }
+    .info h1 {
+      margin: 0;
     }
   }
