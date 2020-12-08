@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>A/B Testing</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <!-- inspired from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+    <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Project Sections</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a> 
+    <a href="#steps" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Steps Taken</a> 
+    <a href="#experiment" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experiment</a> 
+    <a href="#takeaways" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Takeaways</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <!-- Header Content -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-jumbo"><b>A/B Testing</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+    <div class="w3-container" id="overview">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Overview</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        One way to see if your redesigns are likely to perform better is by carrying out A/B testing. 
+        This mechanism allows us to compare variations of a product (in this case, a website) 
+        by executing statistical analysis, which gives us more insight into the two different UI designs created.
+      </p>
+    </div>
+      <div class="w3-container" id="steps" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Steps Taken</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <ul>
+          <li><p>Make and Deploy the Website.</p></li>
+          <li><p>Create Hypotheses for Statistical Tests.</p></li>
+          <li><p>Collect Data and Apply scripts to run the Statistical Tests.</p>
+          </li>
+          <li>Summarize Results.<p>
+          </p>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-container" id="experiment" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Experiment</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        I built two versions of a simple plant shopping page. They can be viewed 
+        <a href="https://mysterious-fjord-30922.herokuapp.com/">here</a>.
+        In the following figure, I present the infographic of the process and its results.
+      </p>
+      <img class="img-responsive" src="images/plant_shopping_infographic.jpg" width="fit-content">
+  </div>
+  <div class="w3-container" id="takeaways" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Takeaways</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <ul>
+      <li><p>Both versions had a similar effect in terms of return rate and time of completion. 
+        Therefore, we can deploy any one of these versions.</p></li>
+      <li><p>One of the main drawbacks of the test is that the user data gathered is too small. 
+        I would need to collect more to make more accurate conclusions..</p></li>
+      <li><p>Based on the drawbacks and results, the exercise demonstrates that certain visual elements don’t make a significant difference in certain scenarios. To create a substantial difference, 
+        we would need to research and learn more about which aspect of the visual interface would make a difference. </p>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+  </body>
+</html>

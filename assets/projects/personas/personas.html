@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Personas and Storyboarding</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <!-- inspired from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+    <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Project Sections</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a> 
+    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interface</a> 
+    <a href="#observation" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Key Observations</a> 
+    <a href="#interviews" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interviews</a> 
+    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personas</a> 
+    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Storyboard</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- <div class="sidenav">
+      <a href="#overview">Overview</a>
+      <a href="#interface">Interface</a>
+      <a href="#observation">Key Observations</a>
+      <a href="#interviews">Interviews</a>
+      <a href="#personas">Personas</a>
+      <a href="#storyboard">Storyboard</a>
+    </div> -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <!-- Header Content -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-jumbo"><b>Personas and Storyboarding</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+    <div class="w3-container" id="overview">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Overview</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        One of the first steps in creating user-friendly designs of an interface 
+        is understanding how users interact with the interface itself. This project outlines
+        how UIUX designers typically go about fulfilling this step.
+      </p>
+      <p>We will explore this interface’s components, 
+        how users feel about them, and 
+        create personas and storyboards to illustrate this interface’s typical users and usages.</p>
+    </div>
+      <div class="w3-container" id="interface" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Interface</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>Since 2020 has mostly been us staying at our homes, I chose to observe standard household equipment, which
+          is available for users of almost all ages, i.e., Microwave. This device is used to heat food quickly, which
+          can be performed by selecting various heat and timer options, as illustrated below:
+        </p>
+        <img src="images/microwave.jpg" width="100%">
+      </div>
+      <div class="w3-container" id="observation" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Key Observations</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>One of the methods of gathering interface interaction is to observe how one usually interacts with the interface. During this project’s entire period, 
+          I observed several individuals using the microwave in their natural state. Some of the key observations gathered were:
+        </p>
+        <ul>
+          <li><p>Almost all users did not hesitate or question how to start the microwave and use it.</p></li>
+          <li><p>Some users waited beside the microwave while others worked on other tasks while the food was heating up.</p></li>
+          <li><p>Almost all of them reacted to the microwave’s beep sound and went towards the microwave to open its door. 
+            They seem to know that the sound indicated the timer’s end, and the food is likely to be heated up.
+          </p>
+          </li>
+          <li><p>The frequency of users using the number / timer pad was a lot more than using the "specialty" ones, which are presented
+            as buttons for convenience cooking.
+          </p>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-container" id="interviews" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Interviews</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>Another way to gather interface interaction is by directly confronting the users and interviewing them with various questions
+        to understand how they use the interface and what they feel about them. The questions that I asked my interviewees are as follows:
+      </p>
+      <ul>
+        <li><p>What was your first impression of the microwave you are currently using?</p></li>
+        <li><p>What feature of the microwave do you most use on an average day?</p></li>
+        <li><p>What feature of the microwave do you least use on an average day?</p></li>
+        <li><p>How often do you use the microwave on average per day?</p></li>
+        <li><p>What was the most intuitive about using the microwave?</p></li>
+        <li><p>What was the least intuitive about using the microwave?</p></li>
+        <li><p>What do you like about the microwave?</p></li>
+        <li><p>What do you not like about the microwave?</p></li>
+        <li><p>What kind of food do you often heat in the microwave?</p></li>
+        <li><p>Any general comments about the microwave?</p></li>
+      </ul>
+      Here are the summarized responses:
+      <ul>
+        <li>
+          <p>
+          <b>User A:</b> This user uses the microwave about once per day. Their first reaction to the appliance was that it had a lot of buttons. 
+          While they were comfortable with the timer pad and the general operation of how to start heating up food, 
+          they were unsure how to use the other buttons (specialty ones). They liked how spacious the microwave is on the inside. This allowed
+          them to heat up multiple dishes (usually stir-fried, cooked vegetables, and meat) at once! However, they felt that the number / timer pad took too much space. If they were to improve this,
+          maybe a digital timer interface would be nice! In addition, they wished for an option to heat up the food even faster because of their tight schedule.
+        </p>
+        </li>
+        <li>
+          <p>
+          <b>User B:</b> This user uses the microwave about four times per day. They had a similar reaction to User A with respect to how there were many buttons.
+          Nevertheless, they were happy that this appliance existed as it allowed them to heat up food quickly. This saved them time as they are also typically on a tight schedule.
+          They were most familiar with the start and stop buttons and were wary of using the
+          specialty ones. Hence, they stuck to the familiar aspects of the interface. They would use the microwave to heat up cooked food and cook dishes such as rice. They wished
+          for the interface to have better guidance on using the specialty buttons since they would like to use as many aspects of the interface as possible. In addition, they would like
+          the timer pad to be more customizable. Currently, they only have 30 seconds or 1 minute increments. It would be nice to have other increment values.
+        </p>
+        </li>
+        <li>
+          <p>
+          <b>User C:</b> This user uses the microwave about 4-6 times per day. They were already familiar with the interface when they started using the microwave they are using now.
+          One of the features that they found especially convenient, is the defrosting option. While they also used the timer pad frequently, they also used some of the specialty options.
+          They found all of them to be helpful to warm food easily. However, it took them time to understand how to use the specialty buttons. Hence, similar to User B, they wished
+          for better instructions on how to use them. To be more specific, they would like to understand how much time they should use to heat up food in the respective specialty buttons.
+          Apart from that, they really appreciate the buzzer sound of the microwave. It makes them happy as they know that the food is likely ready, and they can dig in right away!
+        </p>
+        </li>
+      </ul>
+      </div>     
+      <div class="w3-container" id="personas" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Personas</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>To represent the spectrum of users that I have observed, I have created 2 personas!</p>
+      <h3><b>Marco, the busy college student</b></h3>
+      <p>
+        This user has a busy schedule and is often multitasking. Hence, they value time, comfort, and convenience. 
+        Usually, while waiting for the food to heat up, they move on to other tasks and then pick up food once they are done.
+      </p>
+      <img src="images/marco.jpg">
+      <h3><b>Kat, the active stay-at-home mom</b></h3>
+      <p>
+        While the user is usually at home, they like to perform many tasks ranging from household chores to engaging in conversations with friends and family. They tend to stick to familiar interfaces.
+        They are wary of trying new functionality, but they have recently tried using new functionalities like defrost.
+      </p>
+      <img src="images/kat.jpg">
+      </div>
+      <div class="w3-container" id="storyboard" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Storyboard</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>Storyboarding is an effective way to capture, relate, and explore experiences in the design process. 
+          After gathering the above insights, I have developed the following storyboard to display a user’s typical interaction with the microwave interface.
+</p>
+        <img src="images/storyboard.jpg" width="50%">
+      </div>
+
+    </div>
+  </body>
+</html>
