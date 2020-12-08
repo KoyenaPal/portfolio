@@ -235,11 +235,11 @@ body {
   }
   
   @media screen and (max-width: 450px) {
-    .info {
+    /* .info {
       display: block;
       text-align: center;
-    }
-    .info h1 {
+    } */
+    /* .info h1 {
       margin: 0;
-    }
+    } */
   }
