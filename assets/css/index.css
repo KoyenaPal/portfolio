@@ -24,11 +24,12 @@ body {
 }
 
 #intro-index {
-  /* font-size: 2em; */
-  display: flex;
-  padding: 10em 15em;
-  justify-content: center;
-  font-weight: normal;
+  width: 60%;
+  padding-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .navbar {
@@ -224,12 +225,16 @@ body {
     padding-bottom: 40px;
     text-align: center;
   }
+
+  @media screen and (max-width: 500px) {
+    #intro-index {
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+  }
   
   @media screen and (max-width: 450px) {
-    #intro-index {
-      display: block;
-      text-align: center;
-    }
     .info {
       display: block;
       text-align: center;
