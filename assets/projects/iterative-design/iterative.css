@@ -1,30 +1,27 @@
 /* Put your style information here! */
-html {
+/* html {
     width: 100%;
     height: 100%;
-}
+} */
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-	/* background-color: #00A7EF; */
-	color: rgb(39, 39, 44);
-	background: #fcf3d5;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.container {
+} */
+/* .container {
 	margin-left: 10%;
 	margin-right: 10%;
 	/* background-color: #FFF4CD; */
-	display: flex;
-	flex-direction: column;
-}
+	/* display: flex; */
+	/* flex-direction: column; */
+/* } */
 
-.container > p {
+/* .container > p {
 	align-self: center;
-}
+} */
 
 section {
 	padding: 25px 0 47.5px 0;

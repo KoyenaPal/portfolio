@@ -28,6 +28,7 @@
     margin:0;
     padding:0; 
 }  */
+
 #proj-spec .grid-container > div {
     text-align: center;
     padding: 20px 0;
@@ -43,8 +44,9 @@
 
 #proj-spec h1{
     color: black;
-    
+    text-align: center;
     padding-bottom: 20px;
+    font-weight: bolder;
 
   }
 #proj-spec h2{
@@ -62,3 +64,26 @@
     margin-left: 20%;
     margin-right: 20%;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+@media screen and (max-width: 500px) {
+    .project-content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    #proj-spec {       
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1 {
+        text-align: center;
+    }
+  }
