@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Development</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <!-- inspired from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+    <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Project Sections</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#overview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a> 
+    <a href="#application" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Web Application</a> 
+    <a href="#principles" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Usability and Design Principles</a> 
+    <a href="#takeaways" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Takeaways</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <!-- Header Content -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-jumbo"><b>Development</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+    <div class="w3-container" id="overview">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Overview</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        React is a popular open-source, front end, Javascript library for building user interfaces or UI components. 
+        As I learned more about UI design and prototyping, I grew more curious about implementing one using React.
+        Hence, in this project, I created a simple user-friendly list interface in React with libraries such as react-bootstrap and material-ui.
+      </p>
+    </div>
+      <div class="w3-container" id="application" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Web application</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>I chose to create a web application named Artshop for users who are interested in buying paintings.
+          In this interface, a user can pick a set of paintings based on their preference of size, shape, and price - all in one page.
+        </p>
+        <p>Here is a quick peek of how it looks like: </p>
+        <img class="img-responsive" src="images/artshop-home.jpg" width="100%">
+        <p>
+          Feel free to play around with this application through the deployed website 
+          <a class="link" href="https://pure-taiga-30631.herokuapp.com/">here</a>.
+        </p>
+        <p>
+          To view and understand how I built it, you can take a look at my GitHub repo
+          <a class="link" href="https://github.com/KoyenaPal/artshop">here</a>.
+        </p>
+      </div>
+      <div class="w3-container" id="principles" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Usability and Design Principles</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>The following principles were considered while creating the web application: </p>
+        <h3>Visual Layout</h3>
+        <ul>
+          <li><b>Minimalistic: </b> The home page focuses on what is important - browsing the paintings with user selected preferences.
+          The application has clearly labeled action items, which allow users to view whatever they want to without confusion.</li>
+          <li><b>Distinguishable sections:</b>
+            Each section of the page is visibly distinguishable. Hence, the user is able to quickly understand the different purposes of each section of the page
+             - namely, a nav bar, display of products, and a shopping cart.</li>
+          </li>
+        </ul>
+        <h3>Alignment</h3>
+        <ul>
+          <li><b>Grids and Cards: </b> Each card, whether they are in the shopping cart or in the display section, are grouped in a responsive grid. 
+            This allows for easy scrolling and viewing of products in different screen sizes.</li>
+        </ul>
+        <h3>Typography</h3>
+        <ul>
+          <li><b>Font: </b> The same font is used throughout the application for consistency.</li>
+          <li><b>Hierarchy: </b> Similar text size signifies similar importance. 
+            The title of the application or section (such as the navbar type) have different text sizes to signify different purposes and importance.</li>
+        </ul>
+        <h3>Affordance</h3>
+        <ul>
+          <li><b>Card: </b> Each card is similarly styled to better recall how each product is displayed.</li>
+          <li><b>Action Items: </b> The navbars are grouped together for better navigation and selection amongst filters. In addition, every "add to cart" and other buttons in the aggregator section are consistent and familiar with other commonly used interfaces.</li>
+        </ul>
+      </div>
+  <div class="w3-container" id="takeaways" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Takeaways</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <ul>
+      <li><p>By creating a react application, I was able to better understand components and importance of structure and design from the perspective of coding the application.</p></li>
+      <li><p>The libraries commonly used with React are very useful to build and customize the primary components while allowing the interface to be a familiar one at the same time.</p></li>
+    </ul>
+  </div>
+
+    </div>
+  </body>
+</html>
