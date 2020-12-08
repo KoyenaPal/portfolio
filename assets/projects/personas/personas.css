@@ -1,0 +1,23 @@
+/* Put your style information here! */
+
+/* * {
+    box-sizing: border-box;
+  }
+  
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;} */
+
+nav[data-toggle="toc"] {
+  top: 42px;
+}
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+}
