@@ -159,7 +159,7 @@ body {
     transform: scale(1);
   }
   
-  .card-grid-space .name {
+  .card-grid-space {
     font-size: 3em;
     margin-bottom: 1.2rem;
     margin-left: 1rem;
@@ -198,8 +198,8 @@ body {
       justify-content: center;
       text-align: center;
     }
-    .card-grid-space .num {
-      margin-left: 0;
+    .card-grid-space {
+      /* margin-left: 0; */
       text-align: center;
     }
   }
